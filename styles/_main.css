@@ -1,0 +1,89 @@
+body {
+  background-color: #0d1117;
+  font-family: 'VGA', sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+}
+
+.row__center {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.profile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__media {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__media img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid white;
+}
+
+.profile__infos {
+  margin-left: 20px;
+}
+
+.profile__infos p {
+  margin-bottom: 20px;
+}
+
+.profile__infos p:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  color: white;
+  font-size: 25px;
+}
+
+.socials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.socials__links {
+  display: block;
+  margin-right: 20px;
+  width: 35px;
+}
+
+.socials__links:last-child {
+  margin-right: 0;
+}
+
+.socials__links img {
+  width: 100%;
+  filter: grayscale(1);
+  transition: all ease-in-out .3s;
+}
+
+.socials__links img:hover {
+    filter: grayscale(0);
+}
+
+@font-face {
+ font-family: 'VGA';
+ src: url('../fonts/VGA.woff2') format("woff2"),
+        url('../fonts/VGA.woff') format("woff");
+}
